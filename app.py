@@ -12,7 +12,7 @@ def hello():
     except RedisError as e:
         print(str(e))
         visits = "cannot connect to Redis, counter disabled"
-    html = 	"<body style=\"background-color: #EA9A89;\">"\
+    html = 	"<body style=\"background-color: #E9967A;\">"\
 			"<h1><span style=\"color: #993300;\"><strong>Bienvenido a Huawei Cloud!</strong></span></h1>"\
 			"<p><img src=\"https://ricardo-rojas-web.obs.myhuaweicloud.com/imgs/huawei-cloud.jfif\" alt=\"Huawei Cloud\" width=\"582\" height=\"291\" /></p>"\
 			"<h2><strong>Despu&eacute;s de este taller estas listo para experimentar y comenzar a crear valor usando la nube p&uacute;blica de Huawei.</strong></h2>"\
