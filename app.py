@@ -21,6 +21,9 @@ def hello():
             "<h2 style=\"color: #4F000B;\">Hostname: [{hostname}]</h2>"\
             "<p>&nbsp;</p>"\
             "<p style=\"color: #720026;\"\><strong>VISITS: </strong><span style=\"background-color: #720026; color: #fff; display: inline-block; padding: 3px 10px; font-weight: bold; border-radius: 5px;\">{visits}</span>&nbsp;</p>"\
+	    "<p>&nbsp;</p>"\
+	    "<h2><span style=\"color: #993300;\"><strong>Registrate en nuestra comunidad Huawei Cloud (click en la imagen)</strong></span></h2>"\
+	    "<p><a title=\"Meetup Huawei Cloud Per&uacute;\" href=\"https://www.meetup.com/es-ES/HuaweiCloudPE\"><img src=\"https://secure.meetupstatic.com/photos/event/7/9/2/1/600_490351009.jpeg\" alt=\"Huawei Cloud Peru Community\" width=\"600\" height=\"338\" /></a></p>"\
 			"</body>"
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname(), visits=visits)
 	
