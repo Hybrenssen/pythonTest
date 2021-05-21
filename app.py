@@ -13,14 +13,14 @@ def hello():
         print(str(e))
         visits = "cannot connect to Redis, counter disabled"
     html = 	"<body style=\"background-color: #FF9B54;\">"\
-			"<h1><span style=\"color: #4F000B;\"><strong>Bienvenido a Huawei Cloud!</strong></span></h1>"\
+			"<h1><span style=\"color: #720026;\"><strong>Bienvenido a Huawei Cloud!</strong></span></h1>"\
 			"<p><img src=\"https://ricardo-rojas-web.obs.myhuaweicloud.com/imgs/huawei-cloud.jfif\" alt=\"Huawei Cloud\" width=\"582\" height=\"291\" /></p>"\
 			"<h2><strong>Despu&eacute;s de este taller estas listo para experimentar y comenzar a crear valor usando la nube p&uacute;blica de Huawei.</strong></h2>"\
 			"<p>&nbsp;</p>"\
-			"<h1 style=\"color: #5e9ca0;\">HELLO WORLD, from application {name}!</h1>"\
-            "<h2 style=\"color: #2e6c80;\">Hostname: {hostname}</h2>"\
+			"<h1 style=\"color: #CE4257;\">HELLO WORLD, from application {name}!</h1>"\
+            "<h2 style=\"color: #4F000B;\">Hostname: [{hostname}]</h2>"\
             "<p>&nbsp;</p>"\
-            "<p style=\"color: #720026;\"\>VISITS: <span style=\"background-color: #720026; color: #fff; display: inline-block; padding: 3px 10px; font-weight: bold; border-radius: 5px;\">{visits}</span>&nbsp;</p>"\
+            "<p style=\"color: #720026;\"\><strong>VISITS: </strong><span style=\"background-color: #720026; color: #fff; display: inline-block; padding: 3px 10px; font-weight: bold; border-radius: 5px;\">{visits}</span>&nbsp;</p>"\
 			"</body>"
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname(), visits=visits)
 	
