@@ -17,7 +17,7 @@ def hello():
 			"<p><img src=\"https://ricardo-rojas-web.obs.myhuaweicloud.com/imgs/huawei-cloud.jfif\" alt=\"Huawei Cloud\" width=\"582\" height=\"291\" /></p>"\
 			"<h2><strong>Despu&eacute;s de este taller estas listo para experimentar y comenzar a crear valor usando la nube p&uacute;blica de Huawei.</strong></h2>"\
 			"<p>&nbsp;</p>"\
-			"<h1 style=\"color: #CE4257;\">HELLO WORLD, from application {name}!</h1>"\
+			"<h1 style=\"color: #CE4257;\">HELLO WORLD, from application APP-DEMO in {envName} environment!</h1>"\
             "<h2 style=\"color: #4F000B;\">Hostname: [{hostname}]</h2>"\
             "<p>&nbsp;</p>"\
             "<p style=\"color: #720026;\"\><strong>VISITS: </strong><span style=\"background-color: #720026; color: #fff; display: inline-block; padding: 3px 10px; font-weight: bold; border-radius: 5px;\">{visits}</span>&nbsp;</p>"\
@@ -25,7 +25,7 @@ def hello():
 	    "<h2><span style=\"color: #993300;\"><strong>Registrate en nuestra comunidad Huawei Cloud (click en la imagen)</strong></span></h2>"\
 	    "<p><a title=\"Meetup Huawei Cloud Per&uacute;\" href=\"https://www.meetup.com/es-ES/HuaweiCloudPE\"><img src=\"https://secure.meetupstatic.com/photos/event/7/9/2/1/600_490351009.jpeg\" alt=\"Huawei Cloud Peru Community\" width=\"600\" height=\"338\" /></a></p>"\
 			"</body>"
-    return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname(), visits=visits)
+    return html.format(envName=os.getenv("NAME", "world"), hostname=socket.gethostname(), visits=visits)
 	
 if __name__ =="__main__":
     app.run(host='0.0.0.0',port=80)	
