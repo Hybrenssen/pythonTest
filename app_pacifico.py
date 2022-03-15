@@ -14,7 +14,7 @@ def hello():
         visits = "cannot connect to Redis, counter disabled"
     html = 	"<body style=\"background-color: #17C9FF; text-align: center;\">"\
 			"<h1><span style=\"color: #720026;\"><strong>Bienvenido al CoE Data de Pacifico!</strong></span></h1>"\
-			"<p><img src=\"https://ricardo-rojas-web.obs.myhuaweicloud.com/imgs/huawei-cloud.jfif\" alt=\"Pacfico\" width=\"582\" height=\"291\" /></p>"\
+			"<p><img src=\"https://www.t-aseguro.com/cotizadorweb/images/imagenes/pacifico-seguros-logo.png\" alt=\"Pacfico\" width=\"582\" height=\"291\" /></p>"\
 			"<h2><strong>Despu&eacute;s de este taller estas listo para experimentar y comenzar a crear valor usando la nube p&uacute;blica de Huawei.</strong></h2>"\
 			"<p>&nbsp;</p>"\
 			"<h1 style=\"color: #CE4257;\">HELLO WORLD, from application APP-DEMO in {envName} environment!</h1>"\
